@@ -1,5 +1,23 @@
 # Galton Board (Quincunx)
 
+## Table of Contents
+
+- [Description](#description)
+- [Techonologies](#technologies-used)
+- [Available Scripts](#available-scripts)
+- [Installation](#react-app-install-package)
+
+## Description
+
+This project is an implementation of a Galton Board using Matter.js, a 2D physics engine in JavaScript. The Galton Board is a vertical board with pegs arranged in a triangular pattern, where balls are dropped from the top and bounce off the pegs as they fall into different sections at the bottom. The goal of this project is to create an interactive and educational simulation of a Galton Board that includes a counter for each section to keep track of the number of balls that fall into each section. This project can be used for educational purposes to demonstrate concepts of probability, randomness, and physics in a visually engaging way. Users can observe the distribution of balls in different sections and see how it relates to probability and randomness. The counters for each section provide a quantitative measure of the outcomes, allowing users to experiment and learn about the principles behind the Galton Board.
+
+## Technologies Used
+
+- JavaScript
+- HTML
+- CSS
+- React
+
 ## Available Scripts
 
 In the project directory, you can run:
