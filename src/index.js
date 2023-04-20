@@ -1,5 +1,5 @@
 import './index.css';
-import Matter from 'matter-js';
+import Matter, { World } from 'matter-js';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -11,6 +11,11 @@ const world = engine.world;
 let Runner = Matter.Runner,
     Bodies = Matter.Bodies,
     Composite = Matter.Composite;
+
+// Position of x and y axis
+let xPos = 150;
+let yPos = 400;
+const size = 7;
 
 // Create a Matter.js renderer
 const render = Matter.Render.create({
@@ -25,10 +30,22 @@ const render = Matter.Render.create({
 }); 
 
 // Create the player's circle (ball)
+Composite.add(world, Bodies.circle(300, 10, size));
 
 // Create the pegs
 
 // Create the left and right walls (bars)
+for(let i = 0; i<=7; i++){
+  Composite.add(world, Bodies.rectangle(xPos += 25, 400, 2, 200, 
+    { 
+      isStatic: true
+    }
+  ));
+}
+
+// Ground, floor of board
+// rectangle(x, y, width, height)
+Composite.add(world, Bodies.rectangle(300, 500, 300, 2, { isStatic: true}));
 
 // Counter
 
