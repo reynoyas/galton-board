@@ -30,6 +30,8 @@ const render = Matter.Render.create({
 
 // Create the left and right walls (bars)
 
+// Counter
+
 // Start the Matter.js engine and renderer
 Matter.Engine.run(engine);
 Matter.Render.run(render);
