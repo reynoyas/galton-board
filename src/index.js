@@ -1,5 +1,5 @@
 import './index.css';
-import Matter, { World } from 'matter-js';
+import Matter from 'matter-js';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -14,16 +14,15 @@ let Runner = Matter.Runner,
 
 // Position of x and y axis
 let xPos = 150;
-let yPos = 140;
-const size = 7;
+const size = 5;
 
 // Create a Matter.js renderer
 const render = Matter.Render.create({
   element: document.body,
   engine: engine,
   options: {
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 600,
+    height: 505,
     wireframes: false,
     background: "black"
   }
@@ -66,7 +65,6 @@ for(let i = 0; i<=10; i++){
 Composite.add(world, Bodies.rectangle(300, 500, 250, 2, 
   { isStatic: true,
     render:{fillStyle: "white"}
-
   }));
 
 // Counter
